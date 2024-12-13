@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet" href="./sign-up.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <main class="main">
+
+            <div class="main_img">
+            </div>
+            <div class="overlay">
+                <div class="reg">
+                    <h2 class="reg_title">Создайте свою
+                        учетную запись</h2>
+                    <div class="reg_header">
+                        <button class="btn active">Ученик</button>
+                        <button class="btn">Родитель</button>
+                        <button class="btn">Учитель</button>
+                    </div>
+                    <form action="" class="reg_form">
+                        <label for="name" class="reg_text-label">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Имя" class="reg_input" required>
+                        <label class="reg_text-span">Номер телефона</label>
+                        <input class="reg_input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+
+                        <!-- <input type="password" placeholder="*******" class="reg_input"> -->
+
+                        <button type="button" id="toggle-password" aria-label="Show password" class="password-toggle">показать</button>
+                            <input type="password" id="password" placeholder="*******" class="reg_input">
+                        <button class="btn">Создать</button>
+
+                        <div class="reg_footer">
+                            <span class="reg_text">Уже есть аккаунт?</span>
+                            <span class="reg_link"><a href="./index-1.html">Войти</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <script src="./sign-up.js"></script>
+</body>
+
+</html>

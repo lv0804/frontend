@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример формы</title>
+</head>
+<body>
+<section class="container">
+  <h2>Регистрация на сайте</h2>
+
+  <form action="https://example.com/submit" method="POST">
+    <!-- Текстовое поле для имени -->
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Поле для ввода пароля -->
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Радиокнопки для выбора пола -->
+    <label>Пол:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужской</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женский</label><br><br>
+
+    <!-- Флажок для согласия с условиями -->
+    <label>
+      <input type="checkbox" name="terms" required> Я согласен с условиями
+    </label><br><br>
+
+    <!-- Выпадающий список для выбора страны -->
+    <label for="country">Страна:</label>
+    <select id="country" name="country">
+      <option value="ru">Россия</option>
+      <option value="us">США</option>
+      <option value="de">Германия</option>
+    </select><br><br>
+
+    <!-- Кнопка отправки формы -->
+    <button type="submit">Отправить</button>
+  </form>
+
+</section>
+
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      font-style: Roboto;
+    }
+  </style>
+
+</body>
+</html>
